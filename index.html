@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cửa Hàng Online - Mua Sắm Dễ Dàng</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            scroll-behavior: smooth;
+            background: linear-gradient(to right, #ff9966, #ff5e62);
+            color: white;
+        }
+        .header {
+            background: #ff4b2b;
+            color: white;
+            padding: 30px;
+            font-size: 36px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+        }
+        .nav {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 15px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        .nav a:hover {
+            color: #ffd700;
+            transform: scale(1.1);
+        }
+        .hero {
+            padding: 100px 20px;
+            background: url('shop-bg.jpg') no-repeat center center/cover;
+            position: relative;
+            box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.4);
+        }
+        .hero h1 {
+            font-size: 44px;
+            margin-top: 20px;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+        }
+        .hero p {
+            font-size: 22px;
+            opacity: 0.9;
+        }
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 15px 40px;
+            font-size: 22px;
+            background: #ffd700;
+            color: black;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: 0.3s;
+            box-shadow: 0 4px 10px rgba(255, 215, 0, 0.6);
+        }
+        .btn:hover {
+            background: #ffcc00;
+            transform: scale(1.1);
+        }
+        .section {
+            padding: 60px 20px;
+        }
+        .products {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .product {
+            width: 250px;
+            padding: 20px;
+            background: white;
+            color: black;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            transition: 0.3s;
+        }
+        .product img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .product:hover {
+            transform: translateY(-10px);
+            box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
+        }
+        .product a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+        .footer {
+            background: #ff4b2b;
+            padding: 30px;
+            font-size: 18px;
+            box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.5);
+        }
+        .guide {
+            background: #fff;
+            color: black;
+            padding: 40px;
+            border-radius: 10px;
+            margin: 40px auto;
+            width: 80%;
+            text-align: left;
+        }
+        .guide h2 {
+            color: #ff4b2b;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">Cửa Hàng Online</div>
+    <div class="nav">
+        <a href="#home">Trang Chủ</a>
+        <a href="#products">Sản Phẩm</a>
+        <a href="#contact">Liên Hệ</a>
+    </div>
+    <div id="home" class="hero">
+        <h1>Chào Mừng Đến Với Cửa Hàng</h1>
+        <p>Mua sắm dễ dàng - Giá tốt mỗi ngày</p>
+        <button class="btn">Mua Ngay</button>
+    </div>
+    <div class="guide">
+        <h2>Hướng Dẫn Sử Dụng</h2>
+        <p><strong>Bước 1:</strong> Tải về mã nguồn trang web.</p>
+        <p><strong>Bước 2:</strong> Chỉnh sửa nội dung và hình ảnh theo nhu cầu.</p>
+        <p><strong>Bước 3:</strong> Đăng tải lên hosting miễn phí như GitHub Pages hoặc Vercel.</p>
+        <p><strong>Bước 4:</strong> Chia sẻ link trang web cho khách hàng.</p>
+    </div>
+    <div id="products" class="section">
+        <h2>Sản Phẩm Bán Chạy</h2>
+        <div class="products">
+            <div class="product"> <a href="#"><img src="tshirt.jpg" alt="Áo Thun"><h3>Áo Thun</h3> <p>Giá: 199.000đ</p></a> </div>
+            <div class="product"> <a href="#"><img src="sneaker.jpg" alt="Giày Sneaker"><h3>Giày Sneaker</h3> <p>Giá: 999.000đ</p></a> </div>
+            <div class="product"> <a href="#"><img src="backpack.jpg" alt="Balo Thời Trang"><h3>Balo Thời Trang</h3> <p>Giá: 499.000đ</p></a> </div>
+            <div class="product"> <a href="#"><img src="watch.jpg" alt="Đồng Hồ"><h3>Đồng Hồ</h3> <p>Giá: 1.299.000đ</p></a> </div>
+        </div>
+    </div>
+    <div id="contact" class="section">
+        <h2>Liên Hệ</h2>
+        <p>Email: shop@example.com</p>
+        <p>Số điện thoại: 0123-456-789</p>
+    </div>
+    <div class="footer">© 2025 - Cửa Hàng Online</div>
+</body>
+</html>
+
